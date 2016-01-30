@@ -19,7 +19,7 @@ void draw()
 {
   if(myPort.available() > 0) {
       int temp = myPort.read();    
-      val[counter]= 1.5*((temp*5000/255)-500)/20+25;    
+      val[counter]= int(1.5*((temp*5000/255)-500)/20+25);    
       
       if(counter==39){
         counter=0;
